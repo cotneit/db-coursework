@@ -28,6 +28,7 @@ export default class BookListView {
 
     this.spinner = createSpinner();
     this.createTable();
+    this.table.append(this.spinner);
     parent.append(this.table);
 
     this.placeholderBook = {
